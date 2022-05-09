@@ -27,7 +27,6 @@ export default function Main() {
         {characters.map((character) => (
             <div key={character.id}>
             <Link to={`${url}/${character.id}`}>{character.name}</Link>
-            {/* <CharacterCard key={character.id} character={character}/> */}
             </div>
         ))}
         <Route path={`${path}/:id`}>
